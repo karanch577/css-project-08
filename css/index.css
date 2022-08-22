@@ -39,6 +39,17 @@ img[alt="logo"]{
     width: 100px;
 }
 
+.signin-btn::after{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    display: block;
+    content: '\f0c9';
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    display: none;
+  }
+
 /* Hero Section */
 
 .intro-section{
@@ -114,6 +125,10 @@ img[alt="logo"]{
     }
     .nav-items{
         display:none;
+    }
+
+    .signin-btn::after{
+        display: block;
     }
 
     .left-section h4{
