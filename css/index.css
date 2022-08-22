@@ -16,7 +16,6 @@ body{
     margin: 0 auto;
 
 
-    /* navbar */
 }
 nav{
     display: flex;
@@ -73,6 +72,9 @@ img[alt="logo"]{
     
 
 }
+.imgs-div{
+    position: relative;
+}
 
 .imgs-div img[alt="intro-img"]{
     width: 100%;
@@ -80,11 +82,44 @@ img[alt="logo"]{
 }
 .vector-dot{
     position: absolute;
-    bottom: 165px;
-    right: 495px;
+    top: 30rem;
+    left: 14%;
    
 }
 .vector-img{
     position: absolute;
-    bottom: 80px;
+    top: 30rem;
+}
+
+
+/* media queries */
+
+@media (max-width:767px) {
+    .intro-section{
+        flex-direction: column;
+    }
+
+    .left-section,
+    .imgs-div{
+        width: 100%;
+    }
+    .imgs-div{
+        order: 1;
+        margin-top: 2rem;
+    }
+
+    .left-section{
+        order:2;
+        text-align: center;
+    }
+    .nav-items{
+        display:none;
+    }
+
+    .left-section h4{
+        width: 100%;
+    }
+    .left-section h1{
+        font-size: 2rem;
+    }
 }
